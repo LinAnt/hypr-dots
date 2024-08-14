@@ -10,7 +10,7 @@
 [url "git@github.com:LinAnt"]
 	insteadOf = https://github.com/LinAnt
 [core]
-	excludesfile = /Users/linant/.gitignore_global
+	excludesfile = $HOME/.config/git/gitignore_global
 	editor = nvim
 [init]
 	defaultBranch = main
@@ -21,7 +21,7 @@
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	allowedSignersFile = /home/linant/.ssh/allowed_signers
+	allowedSignersFile = $HOME/.ssh/allowed_signers
 [push]
 	default = current
 	autoSetupRemote = true
