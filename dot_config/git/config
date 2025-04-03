@@ -18,11 +18,18 @@
 	rebase = true
 [commit]
 	gpgsign = true
+[fetch]
+	prune = true
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	allowedSignersFile = $HOME/.ssh/allowed_signers
+	allowedSignersFile = $HOME/.config/git/allowed-signers
 [push]
 	default = current
 	autoSetupRemote = true
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
